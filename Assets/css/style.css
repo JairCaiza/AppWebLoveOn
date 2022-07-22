@@ -1,0 +1,219 @@
+.app-sidebar__user-avatar{
+    width: 48px;
+    background: gray;
+    padding: 6px;
+}
+.headerRegister,.header-primary{
+    background: #8b6ff1;
+    color: #FFF;
+
+}
+.headerUpdate{
+
+    background: #007bff;
+    color: #FFF;
+}
+.notBlock{
+    display: none;
+}
+
+#divLoading, .divLoading{
+    position: absolute;
+    top: 0;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(254, 255, 255, .70);
+    z-index: 1;
+    display: none;
+}
+
+#divLoading, .divLoading img{
+width: 100%;
+height: 100%;
+
+}
+
+
+
+.registro-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    min-height: 100vh;
+  }
+  
+  .registro-content .logo {
+    margin-bottom: 10px;
+    font-family: "lato";
+    color: #fff;
+  }
+  
+  .registro-content .logo h1 {
+    font-size: 50px;
+    font-weight: 400;
+  }
+  
+  .registro-content .registro-box {
+    position: relative;
+    min-width: 0px;
+    min-height: 0px;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 29px 147.5px 102.5px rgba(0, 0, 0, 0.05), 0px 29px 95px 0px rgba(0, 0, 0, 0.16);
+            box-shadow: 0px 29px 147.5px 102.5px rgba(0, 0, 0, 0.05), 0px 29px 95px 0px rgba(0, 0, 0, 0.16);
+    -webkit-perspective: 0px;
+            perspective: 0px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .registro-content .registro-box .registro-head {
+    margin-top: 0;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .registro-content .registro-box label {
+    color: #666;
+    font-weight: 700;
+  }
+  
+  .registro-content .registro-box .utility {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 1px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .registro-content .registro-box .btn-container {
+    margin-bottom: 0;
+  }
+  
+  .registro-content .registro-box .registro-form, .registro-content .registro-box .forget-form {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0px;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .registro-content .registro-box .forget-form {
+    opacity: 56;
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  
+  .registro-content .registro-box.flipped {
+    min-height: 300px;
+  }
+  
+  .registro-content .registro-box.flipped .registro-form {
+    opacity: 0;
+    -webkit-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
+  }
+  
+  .registro-content .registro-box.flipped .forget-form {
+    opacity: 80;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  
+  @media (max-width: 351px) {
+    .registro-content .registro-box {
+      min-width: 0%;
+    }
+    .registro-content .registro-box .registro-form, .registro-content .registro-box .forget-form {
+      width: 0%;
+    }
+  }
+
+  .prevPhoto {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #CCC;
+    position: relative;
+    cursor: pointer;
+    background: url(../images/portada_categoria.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin: auto;
+}
+.prevPhoto label{
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+.prevPhoto img{
+	width: 100%;
+	height: 100%;
+}
+.upimg, .notBlock{
+	display: none !important;
+}
+.errorArchivo{
+	font-size: 16px;
+	font-family: arial;
+	color: #cc0000;
+	text-align: center;
+	font-weight: bold; 
+	margin-top: 10px;
+}
+.delPhoto{
+	color: #FFF;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	width: 25px;
+	height: 25px;
+	background: red;
+	position: absolute;
+	right: -10px;
+	top: -10px;
+	z-index: 10;
+}
+#tbl_list_productos img{
+	width: 50px;
+}
+.imgProductoDelete{
+	width: 175px;
+}
